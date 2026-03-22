@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: "Inter-regular", sans-serif;
+  overflow: hidden;
+}
+
+.page__content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 543px) {
+  .layout {
+    flex-direction: column;
+    overflow: visible;
+  }
+}

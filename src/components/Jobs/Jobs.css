@@ -1,0 +1,137 @@
+.jobs {
+  width: 100%;
+  padding: 24px;
+  background-color: #ffffff;
+  color: #111827;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.jobs h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.jobs__top,
+.jobs__message {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+}
+
+.jobs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.jobs__card {
+  width: calc((100% - 48px) / 3);
+  min-height: 300px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.jobs__card h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.jobs__card p {
+  margin-bottom: 10px;
+  color: #374151;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.jobs__actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.jobs__button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.jobs__button:hover {
+  opacity: 0.9;
+}
+
+.jobs__image {
+  width: 100%;
+  max-width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-top: 10px;
+}
+
+@media (max-width: 983px) {
+  .jobs {
+    padding: 16px;
+    overflow-y: auto;
+  }
+
+  .jobs h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .jobs__top,
+  .jobs__message {
+    margin: 0 0 20px;
+  }
+
+  .jobs__list {
+    gap: 16px;
+  }
+
+  .jobs__card {
+    width: 100%;
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .jobs__card h2 {
+    font-size: 20px;
+  }
+
+  .jobs__card p {
+    font-size: 14px;
+  }
+
+  .jobs__button {
+    width: 100%;
+    max-width: 220px;
+    display: block;
+    margin: 0 auto 20px;
+    font-size: 15px;
+    padding: 10px 16px;
+  }
+
+  .jobs__actions {
+    margin-top: 20px;
+  }
+
+  .jobs__image {
+    max-width: 100%;
+    height: 180px;
+    margin-top: 12px;
+  }
+}

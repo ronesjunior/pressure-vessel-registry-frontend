@@ -1,0 +1,43 @@
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: #2f3640;
+  color: white;
+  padding: 20px;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  border-bottom: 1px solid #555;
+}
+
+.sidebar li:hover {
+  background-color: #2b5d94;
+}
+
+.sidebar li:hover a {
+  color: #130369;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar__link {
+  display: block;
+  width: 100%;
+}
