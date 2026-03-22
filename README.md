@@ -30,7 +30,7 @@ A aplicação permite:
 - **Fetch API**
 - **Local Storage**
 - **Banco e backend no Google Cloud**
-- **frontend no Vercel**
+- **frontend no Vercel www.vercel.com**
 
 ## Estrutura do projeto
 
