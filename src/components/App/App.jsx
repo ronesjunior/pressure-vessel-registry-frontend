@@ -9,7 +9,7 @@ import Register from "../Register/Register.jsx";
 import Login from "../Login/Login.jsx";
 import Jobs from "../Jobs/Jobs.jsx";
 import About from "../About/About.jsx";
-import NotFound from "../NotFound/NotFound.jsx";
+import NotFound from "../NotFound/Notfound.jsx";
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute.jsx";
 import {
   Outlet,
