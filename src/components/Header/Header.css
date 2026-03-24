@@ -92,7 +92,7 @@
   color: #d6e8ff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 544px) {
   .header {
     display: grid;
     grid-template-columns: 1fr auto;
