@@ -2,6 +2,10 @@
 
 Acesse: https://pressure-vessel-registry-frontend.vercel.app/
 
+Frontend = Vercel
+Backend = Render
+Banco PostgreSQL = Google Cloud
+
 Projeto front-end desenvolvido com **React** e **Vite**, com integração a uma **API de terceiros** usando `fetch()`.  
 A aplicação possui rotas, carregamento dinâmico de dados, popup de cadastro, preloader, tratamento de erros e renderização responsiva dos elementos.
 
