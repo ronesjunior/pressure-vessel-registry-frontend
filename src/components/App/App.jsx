@@ -89,7 +89,6 @@ export default function App() {
         setIsLoggedIn(true);
       })
       .catch((error) => {
-        console.log("Erro ao buscar perfil:", error);
         tokenUtils.removeToken();
         setIsLoggedIn(false);
         setCurrentUser({
@@ -146,7 +145,6 @@ export default function App() {
           name: response.user.name,
           email: response.user.email,
         });
-        console.log("Login bem-sucedido:", response);
 
         setIsLoggedIn(true);
         navigate("/");
