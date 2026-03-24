@@ -8,7 +8,7 @@
 }
 
 .jobs h1 {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 24px;
   text-align: center;
 }
@@ -40,7 +40,7 @@
 
 .jobs__card h2 {
   margin-bottom: 12px;
-  font-size: 22px;
+  font-size: 1.375rem;
   color: #111827;
 }
 
@@ -63,7 +63,7 @@
   border-radius: 10px;
   background-color: #2563eb;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -89,7 +89,7 @@
   }
 
   .jobs h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
   }
 
@@ -109,11 +109,11 @@
   }
 
   .jobs__card h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .jobs__card p {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .jobs__button {
@@ -121,7 +121,7 @@
     max-width: 220px;
     display: block;
     margin: 0 auto 20px;
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding: 10px 16px;
   }
 

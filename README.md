@@ -29,6 +29,8 @@ A aplicação permite:
 - **React Router DOM**
 - **Fetch API**
 - **Local Storage**
+- **Banco e backend no Google Cloud**
+- **frontend no Vercel www.vercel.com**
 
 ## Estrutura do projeto
 

@@ -17,7 +17,7 @@
 }
 
 .lista-vasos__title {
-  font-size: 28px;
+  font-size: 1.75rem;
   margin-bottom: 20px;
 }
 
@@ -38,7 +38,7 @@
   padding: 12px;
   border: 1px solid #e5e7eb;
   text-align: left;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .lista-vasos__table th {
@@ -61,7 +61,7 @@
   color: #fff;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .lista-vasos__delete-button:hover {
@@ -81,7 +81,7 @@
   background-color: #2563eb;
   color: #fff;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .lista-vasos__more-button:hover {
@@ -98,6 +98,6 @@
   }
 
   .lista-vasos__title {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 }

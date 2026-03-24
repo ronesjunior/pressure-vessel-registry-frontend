@@ -46,7 +46,7 @@ function AppLayout({ isPageLoading, isMobile, handleLogout, name, email }) {
 
 export default function App() {
   const [isPageLoading, setIsPageLoading] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 544);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 544); // true se a largura da janela do navegador for menor que 544px
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isCheckingToken, setIsCheckingToken] = useState(true);
   const [currentUser, setCurrentUser] = useState({
@@ -146,6 +146,7 @@ export default function App() {
           name: response.user.name,
           email: response.user.email,
         });
+        console.log("Login bem-sucedido:", response);
 
         setIsLoggedIn(true);
         navigate("/");

@@ -27,3 +27,13 @@
 @import url("./components/ModalWithForm/popupRegister.css");
 
 @import url("./components/Notfound/Notfound.css");
+
+html {
+  font-size: 100%;
+} /* diminuir a fonte toda da págiina */
+
+@media (max-width: 543px) {
+  html {
+    font-size: 75%;
+  }
+}
