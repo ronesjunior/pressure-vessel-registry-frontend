@@ -163,7 +163,8 @@ export default function App() {
       });
   }
 
-  function handleLogout() {
+  function handleLogout(e) {
+    e.preventDefault();
     tokenUtils.removeToken();
     setIsLoggedIn(false);
     setLoginError("");
@@ -172,7 +173,7 @@ export default function App() {
       name: "",
       email: "",
     });
-    navigate("/signin");
+    navigate("/");
   }
 
   if (isCheckingToken) {

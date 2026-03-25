@@ -91,14 +91,7 @@ export default function Navigation({ isMobile = false, handleLogout }) {
               </NavLink>
             </li>
             <li>
-              <a
-                href="/signin"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleLogout();
-                }}
-                className="mobile-nav__link"
-              >
+              <a href="/" onClick={handleLogout} className="mobile-nav__link">
                 Sair
               </a>
             </li>

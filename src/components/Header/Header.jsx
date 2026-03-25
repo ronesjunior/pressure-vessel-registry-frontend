@@ -25,13 +25,7 @@ export default function Header({ isMobile, handleLogout, name, email }) {
         <nav className="header-menu">
           <ul>
             <li>
-              <a
-                href="/signin"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleLogout();
-                }}
-              >
+              <a href="/" onClick={handleLogout}>
                 Sair
               </a>
             </li>
