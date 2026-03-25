@@ -29,7 +29,7 @@
 }
 
 .login-form label {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .login-form input {
@@ -45,7 +45,7 @@
   color: white;
   cursor: pointer;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .login-form button:hover {
@@ -83,7 +83,7 @@
 
 /* Erros de validação */
 .form__input-error {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: rgb(255, 255, 255);
 }
 
@@ -99,5 +99,5 @@
   display: block;
   min-height: 18px;
   color: red;
-  font-size: 14px;
+  font-size: 0.875rem;
 }

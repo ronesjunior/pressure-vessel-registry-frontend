@@ -1,6 +1,6 @@
 export default function NotFound() {
   return (
-    <section className="not-found">
+    <section className="not-Found">
       <h1>Nada encontrado</h1>
       <p>A página que você tentou acessar não existe.</p>
     </section>

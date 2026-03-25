@@ -46,7 +46,7 @@ function AppLayout({ isPageLoading, isMobile, handleLogout, name, email }) {
 
 export default function App() {
   const [isPageLoading, setIsPageLoading] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 544);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 544); // true se a largura da janela do navegador for menor que 544px
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isCheckingToken, setIsCheckingToken] = useState(true);
   const [currentUser, setCurrentUser] = useState({
@@ -89,7 +89,6 @@ export default function App() {
         setIsLoggedIn(true);
       })
       .catch((error) => {
-        console.log("Erro ao buscar perfil:", error);
         tokenUtils.removeToken();
         setIsLoggedIn(false);
         setCurrentUser({
@@ -164,7 +163,8 @@ export default function App() {
       });
   }
 
-  function handleLogout() {
+  function handleLogout(e) {
+    e.preventDefault();
     tokenUtils.removeToken();
     setIsLoggedIn(false);
     setLoginError("");
@@ -173,7 +173,7 @@ export default function App() {
       name: "",
       email: "",
     });
-    navigate("/signin");
+    navigate("/");
   }
 
   if (isCheckingToken) {

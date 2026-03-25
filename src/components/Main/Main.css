@@ -26,7 +26,7 @@
 }
 
 .main__eyebrow {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   color: #1d4ed8;
   margin: 0 0 8px;
@@ -42,7 +42,7 @@
 
 .main__subtitle,
 .main__text {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.7;
   color: #374151;
   margin: 0 0 16px;
@@ -70,7 +70,7 @@
 }
 
 .main__section-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #111827;
   margin: 0 0 16px;
 }
@@ -86,12 +86,13 @@
   border: 1px solid #d1d5db;
   border-radius: 12px;
   padding: 18px;
+  overflow-wrap: break-word;
 }
 
 .main__card h3 {
   margin: 0 0 8px;
   color: #111827;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .main__card p,
@@ -116,6 +117,6 @@
   }
 
   .main__title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
