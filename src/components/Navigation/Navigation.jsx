@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Navigation({ isMobile = false, handleLogout }) {
@@ -13,6 +13,36 @@ export default function Navigation({ isMobile = false, handleLogout }) {
       setIsMenuOpen(false);
     }
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const clickedInsideMenu = event.target.closest(".mobile-nav");
+
+      if (!clickedInsideMenu) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleEscKey = (event) => {
+      if (event.key === "Escape") {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("keydown", handleEscKey);
+
+    return () => {
+      document.removeEventListener("keydown", handleEscKey);
+    };
+  }, []);
 
   if (isMobile) {
     return (
